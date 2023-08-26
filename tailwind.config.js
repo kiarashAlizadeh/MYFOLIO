@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.{html,js}'],
+  content: ['./**/*.html'],
   theme: {
     extend: {
       colors: {
-        'navBar': '#1E1E1E',
-        'navBar-active': '#A6A001',
+        'dark-gray': '#1E1E1E',
+        'dark-yellow': '#A6A001',
+        'main-bg': '#101113',
       },
     },
   },

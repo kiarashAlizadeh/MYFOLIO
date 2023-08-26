@@ -8,25 +8,58 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>my Folio</title>
   </head>
-  <body class="box-border">
+  <body class="box-border bg-main-bg text-white">
     <header>
-      <nav class="bg-navBar flex justify-center items-center py-12">
-        <img src="./assets/images/logo.svg" alt="logo" />
+      <nav class="bg-dark-gray flex justify-center items-center py-12">
+        <a href="#"><img src="./assets/images/logo.svg" alt="logo" /></a>
         <ul class="flex justify-between mx-60 text-white text-lg space-x-12">
-          <li class="text-navBar-active">Home</li>
-          <li>Pages</li>
-          <li>Portfolio</li>
-          <li>Blogs</li>
-          <li>Contact</li>
+          <li class="text-dark-yellow"><a href="">Home</a></li>
+          <li><a href="">Pages</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
         <span class="flex text-white relative z-10">
           <img class="absolute -left-2 z-0 -top-1.5" src="./assets/images/nav-circle.svg" alt="">
-          <span class="z-10">
+          <a href="" class="z-10">
             Let’s Talk
             <i class="bi bi-chevron-right"></i>
-          </span>
+          </a>
         </span>
       </nav>
+      <section class="flex justify-center">
+        <div class="flex flex-col items-end justify-center mr-[33px]">
+          <span class="flex flex-col items-start justify-center w-min">
+            <span class="text-lg mb-5">
+              Hey There,
+            </span>
+            <span class=" text-6xl font-bold mb-10 w-[40rem]">
+              <span class="flex text-9xl font-bold items-center">
+                I’m
+                <span class="text-dark-yellow">
+                  Kiarash
+                </span>
+              </span>
+              A Front End Developer
+            </span>
+            <p class="w-[43rem] text-xl mb-14">
+              Design Club is a digital agency specialized in ecommerce. We build scalable, high-end web shops with composable commerce architecture.
+            </p>
+            <span class="flex text-white relative z-10">
+            <img class="absolute -left-[3px] z-0 -top-[10px] w-[48px]" src="./assets/images/nav-circle.svg" alt="">
+            <a href="" class="z-10">
+                About Me
+                <i class="bi bi-chevron-right"></i>
+            </a>
+          </span>
+        </div>
+        <div class="relative z-50">
+          <img class=" absolute top-0 z-0 right-0 w-96 " src="./assets/images/header-Ellipse.png" alt="">
+          <span class="bg-white px-4 py-1.5 text-black rounded-md  absolute top-80 right-0 z-20">Front End</span>
+          <span class="bg-white px-4 py-1.5 text-black rounded-md  absolute top-[11.5rem] left-[4rem] z-20">Back End</span>
+          <img class="w-auto z-30" src="./assets/images/header-personalPic.png" alt="personalPic">
+        </div>
+      </section>
     </header>
   </body>
 </html>
