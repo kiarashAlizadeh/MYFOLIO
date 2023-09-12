@@ -246,27 +246,27 @@
 
       <!-- header main section -->
       <section
-        class="flex 2xl:flex-row 2xl:justify-center flex-col items-center"
+        class="flex 2xl:flex-row 2xl:justify-center flex-col items-center mt-10 xl:mt-5"
       >
         <div
           class="flex flex-col 2xl:items-end items-center 2xl:mb-0 mb-10 justify-center mr-[33px]"
         >
           <span
-            class="flex flex-col xl:items-start items-center justify-center"
+            class="flex flex-col md:items-start items-center justify-center"
           >
-            <span class="xl:text-lg text-base mb-5 select-none">
+            <span class="md:text-lg text-base mb-5 select-none">
               Hey There,
             </span>
             <span
-              class="xl:text-6xl text-xl font-bold mb-10 xl:w-[40rem] select-none"
+              class="text-6xl font-bold mb-10 max-w-[40rem] select-none sm:text-justify text-center"
             >
-              <span class="flex xl:text-9xl text-xl font-bold items-center">
+              <span class="flex md:text-9xl text-6xl font-bold items-center justify-center">
                 I’m
                 <span class="text-dark-yellow"> Kiarash </span>
               </span>
               A Front End Developer
             </span>
-            <p class="max-w-[43rem] xl:text-xl text-base mb-14 text-justify">
+            <p class="max-w-[43rem] xl:text-xl text-base sm:mb-14 mb-7 text-justify">
               Design Club is a digital agency specialized in ecommerce. We build
               scalable, high-end web shops with composable commerce
               architecture.
@@ -308,7 +308,7 @@
 
       <!-- header brand section -->
       <section
-        class="bg-dark-gray flex gap-[81px] py-5 px-10 justify-between flex-wrap"
+        class="bg-dark-gray py-5 px-10 relative w-full flex gap-20 overflow-hidden"
       >
         <img src="./assets/images/header-adobe.svg" alt="" />
         <img src="./assets/images/header-ibm.svg" alt="" />
@@ -318,13 +318,20 @@
         <img src="./assets/images/header-ibm.svg" alt="" />
         <img src="./assets/images/header-samsung.svg" alt="" />
         <img src="./assets/images/header-microsoft.svg" alt="" />
+        <img src="./assets/images/header-adobe.svg" alt="" />
+        <img src="./assets/images/header-ibm.svg" alt="" />
+        <img src="./assets/images/header-samsung.svg" alt="" />
+        <img src="./assets/images/header-microsoft.svg" alt="" />
+        <img src="./assets/images/header-adobe.svg" alt="" />
+        <img src="./assets/images/header-ibm.svg" alt="" />
+        <img src="./assets/images/header-samsung.svg" alt="" />
       </section>
     </header>
 
     <main>
       <!-- services -->
       <section
-        class="flex my-20 2xl:flex-row 2xl:justify-center flex-col relative items-center"
+        class="flex mt-14 2xl:flex-row 2xl:justify-center flex-col relative items-center"
       >
         <span
           class="2xl:text-white/[.4] 2xl:-rotate-90 2xl:h-[10px] 2xl:absolute 2xl:right-0 text-[65px] select-none"
@@ -380,7 +387,7 @@
       <!-- Portfolio -->
       <section class="flex flex-col items-center">
         <div
-          class="text-[40px] text-dark-yellow mt-[60px] mb-[78px] select-none"
+          class="text-[40px] text-dark-yellow mt-14 mb-5 select-none"
         >
           PORTFOLIO
         </div>
@@ -402,15 +409,15 @@
 
       <!-- PROJECTS -->
       <section
-        class="flex justify-center relative items-center 2xl:flex-row flex-col"
+        class="flex justify-center relative items-center 2xl:flex-row flex-col mt-14"
       >
         <div
-          class="2xl:text-white/[.4] 2xl:-rotate-90 text-[65px] 2xl:absolute 2xl:left-0 select-none"
+          class="2xl:text-white/[.4] 2xl:-rotate-90 text-[65px] 2xl:absolute 2xl:left-0 select-none mb-5"
         >
           PROJECTS
         </div>
         <div class="flex flex-col items-center">
-          <div class="grid 2xl:grid-cols-2 justify-end mt-[74px] gap-5">
+          <div class="grid 2xl:grid-cols-2 justify-end gap-5">
             <div
               class="bg-[url('../images/main-projects-big1.png')] big-project-card"
             >
@@ -427,7 +434,7 @@
               UXUI - Graphic Designing
             </div>
           </div>
-          <div class="grid 2xl:grid-cols-2 mt-[40px] gap-5">
+          <div class="grid 2xl:grid-cols-2 gap-5">
             <div
               class="bg-[url('../images/main-projects-small2.png')] small-project-card text-[36px] text-bold leading-[38px] 2xl:ml-auto"
             >
@@ -452,7 +459,7 @@
               Product - Design
             </div>
           </div>
-          <span class="text-white relative z-10 mt-[106px] text-center">
+          <span class="text-white relative z-10 xl:mt-[106px] mt-14 mb-20 text-center">
             <img
               class="absolute -left-2 z-0 -top-1.5"
               src="./assets/images/nav-circle.svg"
@@ -468,7 +475,7 @@
 
       <!-- TESTIMONIALS -->
       <div
-        class="text-[40px] text-dark-yellow mt-[126px] mb-[78px] text-center select-none"
+        class="text-[40px] text-dark-yellow xl:mb-[78px] mb-5 text-center select-none"
       >
         REVIEWS
       </div>
@@ -506,16 +513,16 @@
       </section>
 
       <!-- blogs -->
-      <section class="flex flex-col items-center mb-32">
+      <section class="flex flex-col items-center xl:mb-32 mb-16">
         <div
-          class="text-[40px] text-dark-yellow mt-[120px] mb-[80px] select-none"
+          class="text-[40px] text-dark-yellow xl:mt-[120px] mt-14 xl:mb-[80px] mb-5 select-none"
         >
           BLOGS
         </div>
         <div
           class="grid xl:grid-cols-3 lg:grid-cols-2 justify-center items-center gap-7"
         >
-          <div class="flex flex-col items-start sm:w-auto w-fit">
+          <div class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent xl:text-white xl:rounded-none bg-white/60 rounded-xl text-slate-900 p-5">
             <img
               src="./assets/images/main-blogs-pic1.png"
               alt=""
@@ -530,7 +537,7 @@
               scalable, high-end web shops.
             </p>
           </div>
-          <div class="flex flex-col items-start sm:w-auto w-fit">
+          <div class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent xl:text-white xl:rounded-none bg-white/60 rounded-xl text-slate-900 p-5">
             <img
               src="./assets/images/main-blogs-pic2.png"
               alt=""
@@ -545,7 +552,7 @@
               scalable, high-end web shops.
             </p>
           </div>
-          <div class="flex flex-col items-start sm:w-auto w-fit">
+          <div class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent xl:text-white xl:rounded-none bg-white/60 rounded-xl text-slate-900 p-5">
             <img
               src="./assets/images/main-blogs-pic3.png"
               alt=""
