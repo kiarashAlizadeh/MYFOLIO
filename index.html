@@ -18,8 +18,7 @@
     <title>My Folio</title>
   </head>
   <body class="box-border bg-main-bg text-white selection:bg-dark-yellow/70 text-white">
-    <header>
-      <!-- navBar -->
+
       <!-- <nav class="bg-dark-gray flex justify-center items-center py-12">
         <a href="#"><img src="./assets/images/logo.svg" alt="logo" /></a>
         <ul class="flex justify-between mx-60 text-white text-lg space-x-12">
@@ -42,8 +41,8 @@
         </span>
       </nav> -->
 
-      <nav
-        class="relative px-4 py-4 flex justify-between items-center bg-dark-gray"
+    <nav
+        class="px-16 py-4 flex justify-between items-center bg-dark-gray sticky top-0 z-50 lg:relative"
       >
         <a class="text-3xl font-bold leading-none" href="#">
           <img src="./assets/images/logo.svg" alt="logo" />
@@ -51,7 +50,7 @@
         <div class="lg:hidden">
           <button class="navbar-burger flex items-center text-dark-yellow p-3">
             <svg
-              class="block h-4 w-4 fill-current"
+              class="block h-10 w-10 fill-current"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -152,7 +151,7 @@
           </li>
         </ul>
         <a
-          class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
+          class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50/50 hover:bg-white text-sm text-gray-900 font-bold rounded-xl transition duration-200"
           href="#"
           >Sign In
         </a>
@@ -244,8 +243,9 @@
         </nav>
       </div>
 
+    <header>
       <!-- header main section -->
-      <section
+      <div
         class="flex 2xl:flex-row 2xl:justify-center flex-col items-center mt-10 xl:mt-5"
       >
         <div
@@ -254,7 +254,7 @@
           <span
             class="flex flex-col md:items-start items-center justify-center"
           >
-            <span class="md:text-lg text-base mb-5 select-none">
+            <span class="md:text-lg text-base mb-5 select-none mr-auto ml-20">
               Hey There,
             </span>
             <span
@@ -304,11 +304,11 @@
             alt="personalPic"
           />
         </div>
-      </section>
+      </div>
 
       <!-- header brand section -->
-      <section
-        class="bg-dark-gray py-5 px-10 relative w-full flex gap-20 overflow-hidden"
+      <div
+        class="bg-dark-gray py-5 px-10 relative w-full flex gap-20 lg:snap-none lg:overflow-hidden snap-x overflow-x-auto"
       >
         <img src="./assets/images/header-adobe.svg" alt="" />
         <img src="./assets/images/header-ibm.svg" alt="" />
@@ -325,7 +325,7 @@
         <img src="./assets/images/header-adobe.svg" alt="" />
         <img src="./assets/images/header-ibm.svg" alt="" />
         <img src="./assets/images/header-samsung.svg" alt="" />
-      </section>
+      </div>
     </header>
 
     <main>
@@ -392,7 +392,7 @@
           PORTFOLIO
         </div>
         <ul
-          class="flex justify-center gap-[70px] bg-dark-gray text-lg items-center rounded-[20px] lg:flex-row lg:max-w-[1058px] lg:h-[100px] lg:p-5 flex-col max-w-lg h-auto p-10"
+          class="flex justify-center gap-[70px] bg-dark-gray text-lg items-center rounded-[20px] md:flex-row md:max-w-[1058px] md:h-[100px]  flex-col max-w-lg h-auto md:py-10 md:px-12 p-10"
         >
           <li
             class="text-white bg-dark-yellow px-[25px] py-[15px] rounded-[12px]"
@@ -459,13 +459,13 @@
               Product - Design
             </div>
           </div>
-          <span class="text-white relative z-10 xl:mt-[106px] mt-14 mb-20 text-center">
+          <span class="text-white relative xl:mt-[106px] mt-14 mb-20 lg:mr-auto lg:ml-32 text-center">
             <img
-              class="absolute -left-2 z-0 -top-1.5"
+              class="absolute -left-2 z-[-1] -top-1.5"
               src="./assets/images/nav-circle.svg"
               alt=""
             />
-            <a href="" class="z-10">
+            <a href="">
               View All Projects
               <i class="bi bi-chevron-right"></i>
             </a>
@@ -502,6 +502,9 @@
               accumsan condimentum massa ac malesuada, consectetur adipiscing
               elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
               do eiusmod tempor incididunt.
+              <br/>
+              <br/>
+              <br/>
               <img
                 class="xl:w-[121px] xl:h-[97px] w-auto h-auto ml-auto"
                 src="./assets/images/main-qutes.svg"
@@ -522,7 +525,7 @@
         <div
           class="grid xl:grid-cols-3 lg:grid-cols-2 justify-center items-center gap-7"
         >
-          <div class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent xl:text-white xl:rounded-none bg-white/60 rounded-xl text-slate-900 p-5">
+          <div class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent xl:text-white bg-gray-600 rounded-xl text-slate-900 p-5 xl:border-y-4 xl:border-y-red-500 xl:rounded-2xl">
             <img
               src="./assets/images/main-blogs-pic1.png"
               alt=""
@@ -537,7 +540,7 @@
               scalable, high-end web shops.
             </p>
           </div>
-          <div class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent xl:text-white xl:rounded-none bg-white/60 rounded-xl text-slate-900 p-5">
+          <div class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent xl:text-white bg-gray-600 rounded-xl text-slate-900 p-5 xl:border-y-4 xl:border-yellow-200 xl:rounded-2xl">
             <img
               src="./assets/images/main-blogs-pic2.png"
               alt=""
@@ -552,7 +555,7 @@
               scalable, high-end web shops.
             </p>
           </div>
-          <div class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent xl:text-white xl:rounded-none bg-white/60 rounded-xl text-slate-900 p-5">
+          <div class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent xl:text-white bg-gray-600 rounded-xl text-slate-900 p-5 xl:border-y-4 xl:border-sky-500 xl:rounded-2xl">
             <img
               src="./assets/images/main-blogs-pic3.png"
               alt=""
@@ -607,11 +610,11 @@
           </span>
           
         </div>
-        <!-- <div
-          class="flex lg:ml-[70px] mx-auto mr-44 lg:flex-col flex-row lg:gap-0 gap-7 justify-center items-center text-center"
+        <div
+          class="lg:flex ml-[70px] mr-44 hidden"
         >
           <ul
-            class="flex lg:flex-col flex-row lg:text-xl text-base mr-24 gap-5 justify-center items-center mx-auto lg:basis-1/2 basis-auto"
+            class="flex flex-col text-xl mr-24 gap-5"
           >
             <li><a href="">Pages</a></li>
             <li><a href="">Home</a></li>
@@ -620,26 +623,26 @@
             <li><a href="">Blogs</a></li>
           </ul>
           <ul
-            class="flex lg:flex-col flex-row lg:text-xl text-base gap-5 justify-center items-center mx-auto lg:basis-1/2 basis-full"
+            class="flex flex-col text-xl gap-5"
           >
             <li><a href="">Services</a></li>
             <li><a href="">Graphic Design</a></li>
-            <li><a href="">UXUI Design</a></li>
+            <li><a href="">UX UI Design</a></li>
             <li><a href="">Social Media</a></li>
           </ul>
-        </div> -->
+        </div>
         <div class="flex flex-col items-center xl:items-start">
-          <span class="mb-9 text-xl select-none">Country/Region</span>
+          <span class="mb-4 mt-5 lg:mt-0 text-xl select-none">Country/Region</span>
           <a
             href=""
-            class="flex xl:justify-between border-b-4 border-zinc-800 p-3 mb-7 max-w-max"
+            class="flex xl:justify-between border-b-4 border-zinc-800 py-3 mb-2 max-w-max"
           >
             <span class=""> International Version </span>
             <i class="bi bi-chevron-down"></i>
           </a>
           <a
             href=""
-            class="flex xl:justify-between border-b-4 border-zinc-800 p-3 inline max-w-max"
+            class="flex xl:justify-between border-b-4 border-zinc-800 py-3 max-w-max"
           >
             <span> English </span>
             <i class="bi bi-chevron-down"></i>
