@@ -742,6 +742,11 @@ video {
   margin-right: auto;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -856,6 +861,10 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .box-border {
@@ -1051,6 +1060,27 @@ video {
 
 .gap-\[70px\] {
   gap: 70px;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
+.gap-y-11 {
+  row-gap: 2.75rem;
+}
+
+.gap-x-7 {
+  -moz-column-gap: 1.75rem;
+       column-gap: 1.75rem;
+}
+
+.gap-y-40 {
+  row-gap: 10rem;
 }
 
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
@@ -1419,6 +1449,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+.text-orange-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
 .opacity-25 {
   opacity: 0.25;
 }
@@ -1626,6 +1666,10 @@ video {
     margin-top: 120px;
   }
 
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .xl\:h-\[615px\] {
     height: 615px;
   }
@@ -1731,6 +1775,10 @@ video {
     top: 20rem;
   }
 
+  .\32xl\:m-0 {
+    margin: 0px;
+  }
+
   .\32xl\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1774,6 +1822,11 @@ video {
 
   .\32xl\:text-\[65px\] {
     font-size: 65px;
+  }
+
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .\32xl\:text-white\/\[\.4\] {
