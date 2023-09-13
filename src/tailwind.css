@@ -24,7 +24,7 @@
     @apply text-white bg-dark-yellow;
   }
   [type='radio'] ~ span {
-    @apply px-[25px] py-[15px] rounded-xl;
+    @apply px-6 py-4 rounded-xl;
   }
   [type='radio']:checked ~ span {
     @apply active-menu;
