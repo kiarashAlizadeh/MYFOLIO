@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="html" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
     <title>My Folio</title>
   </head>
   <body
-    class="box-border bg-main-bg text-white selection:bg-dark-yellow/70 text-white"
+    class="box-border bg-blue-300 text-main-bg dark:bg-main-bg dark:text-white selection:bg-dark-yellow/70"
   >
     <!-- <nav class="bg-dark-gray flex justify-center items-center py-12">
         <a href="#"><img src="./assets/images/logo.svg" alt="logo" /></a>
@@ -47,17 +47,18 @@
       </nav> -->
 
     <nav
-      class="sm:px-16 px-3 py-4 flex justify-between items-center bg-dark-gray sticky top-0 z-50 lg:relative select-none"
+      class="sm:px-16 px-3 py-4 flex justify-between items-center bg-gradient-to-r bg-dark-gray/90 dark:bg-dark-gray sticky top-0 z-50 lg:relative select-none"
     >
       <a class="text-3xl font-bold leading-none" href="#">
         <img src="./assets/images/logo.svg" alt="logo" draggable="false" />
       </a>
       <button
         class="w-16 h-8 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow mx-5 xl:mx-14"
-        onclick="toggleTheme()"
+        onclick="toggleThemes()"
+        id="darkModeBtn"
       >
         <div
-          id="switch-toggle"
+          id="switch-toggles"
           class="w-9 h-9 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white"
         >
           <svg
@@ -185,7 +186,7 @@
         >Sign In
       </a>
       <a
-        class="hidden lg:inline-block py-2 px-6 bg-dark-yellow/50 hover:bg-dark-yellow text-sm text-white font-bold rounded-xl"
+        class="hidden lg:inline-block py-2 px-6 bg-dark-yellow/50 hover:bg-yellow-500 text-sm text-white font-bold rounded-xl transition duration-200"
         href="#"
         >Sign up
       </a>
@@ -283,7 +284,9 @@
           <span
             class="flex flex-col md:items-start items-center justify-center"
           >
-            <span class="md:text-lg text-base mb-5 select-none mr-auto ml-20">
+            <span
+              class="md:text-lg text-base mb-5 select-none mr-auto ml-20 sm:mx-0"
+            >
               Hey There,
             </span>
             <span
@@ -305,7 +308,7 @@
               architecture.
             </p>
             <span
-              class="flex text-white relative z-10 mr-auto ml-10 my-5 2xl:m-0 select-none"
+              class="flex text-main-bg dark:text-white relative z-10 mr-auto ml-10 my-5 2xl:m-0 select-none"
             >
               <img
                 class="absolute -left-[3px] z-0 -top-[10px] w-[48px]"
@@ -328,11 +331,11 @@
             draggable="false"
           />
           <span
-            class="bg-white/[.8] px-4 py-1.5 text-black rounded-md absolute 2xl:top-80 top-80 left-[30rem] hidden 2xl:inline"
+            class="bg-main-bg dark:bg-white/[.8] px-4 py-1.5 text-white dark:text-black rounded-md absolute 2xl:top-80 top-80 left-[30rem] hidden 2xl:inline"
             >Front End</span
           >
           <span
-            class="bg-white/[.8] px-4 py-1.5 text-black rounded-md absolute z-[-1] top-[11.5rem] left-[4rem] hidden 2xl:inline"
+            class="bg-main-bg dark:bg-white/[.8] px-4 py-1.5 text-white dark:text-black rounded-md absolute z-[-1] top-[11.5rem] left-[4rem] hidden 2xl:inline"
             >Back End</span
           >
           <img
@@ -401,7 +404,7 @@
         class="flex mt-14 2xl:flex-row 2xl:justify-center flex-col relative items-center"
       >
         <span
-          class="2xl:text-white/[.4] 2xl:-rotate-90 2xl:h-[10px] 2xl:absolute 2xl:right-0 text-[65px] select-none"
+          class="text-main-bg dark:2xl:text-white/[.4] 2xl:-rotate-90 2xl:h-[10px] 2xl:absolute 2xl:right-0 text-[65px] select-none"
         >
           SERVICES
         </span>
@@ -456,11 +459,13 @@
 
       <!-- Portfolio -->
       <section class="flex flex-col items-center">
-        <div class="text-[40px] text-dark-yellow mt-14 mb-5 select-none">
+        <div
+          class="text-[40px] text-yellow-600 dark:text-dark-yellow mt-14 mb-5 select-none"
+        >
           PORTFOLIO
         </div>
         <ul
-          class="flex justify-center gap-[70px] bg-dark-gray text-lg items-center rounded-[20px] md:flex-row md:max-w-[1058px] md:h-[100px] flex-col max-w-lg h-auto md:py-10 md:px-12 p-10 select-none"
+          class="flex justify-center gap-[70px] bg-dark-gray text-lg items-center rounded-[20px] md:flex-row md:max-w-[1058px] md:h-[100px] flex-col max-w-lg h-auto md:py-10 md:px-12 p-10 select-none text-white"
         >
           <li
             class="text-white bg-dark-yellow px-[25px] py-[15px] rounded-[12px]"
@@ -476,9 +481,11 @@
       </section>
 
       <!-- PROJECTS -->
-      <section class="flex justify-center relative items-center flex-wrap">
+      <section
+        class="flex justify-center relative items-center flex-wrap text-white"
+      >
         <div
-          class="2xl:text-white/[.4] 2xl:-rotate-90 text-[65px] 2xl:absolute 2xl:left-0 select-none 2xl:mb-5 mt-14 mb-5"
+          class="text-main-bg dark:2xl:text-white/[.4] 2xl:-rotate-90 text-[65px] 2xl:absolute 2xl:left-0 select-none 2xl:mb-5 mt-14 mb-5"
         >
           PROJECTS
         </div>
@@ -532,7 +539,7 @@
             </div>
           </div>
           <span
-            class="text-white relative xl:mt-[106px] mt-14 mb-20 lg:mr-auto lg:ml-32 text-center select-none"
+            class="text-main-bg dark:text-white relative xl:mt-[106px] mt-14 mb-20 lg:mr-auto lg:ml-32 text-center select-none"
           >
             <img
               class="absolute -left-2 z-[-1] -top-1.5"
@@ -550,7 +557,7 @@
 
       <!-- TESTIMONIALS -->
       <div
-        class="text-[40px] text-dark-yellow xl:mb-[78px] mb-5 text-center select-none"
+        class="text-[40px] text-yellow-600 dark:text-dark-yellow xl:mb-[78px] mb-5 text-center select-none"
       >
         REVIEWS
       </div>
@@ -558,12 +565,12 @@
         class="flex 2xl:relative 2xl:justify-center items-center 2xl:flex-row flex-col"
       >
         <div
-          class="2xl:text-white/[.4] 2xl:-rotate-90 2xl:h-[10px] 2xl:text-[65px] text-2xl 2xl:absolute 2xl:right-0 select-none 2xl:mb-0 mb-5"
+          class="text-main-bg dark:2xl:text-white/[.4] 2xl:-rotate-90 2xl:h-[10px] 2xl:text-[65px] text-2xl 2xl:absolute 2xl:right-0 select-none 2xl:mb-0 mb-5"
         >
           TESTIMONIALS
         </div>
         <div
-          class="flex px-[50px] py-[70px] bg-dark-gray xl:w-[1280px] xl:h-[615px] w-auto h-auto rounded-[10px] justify-between items-center xl:flex-row flex-col"
+          class="flex px-[50px] py-[70px] bg-dark-gray xl:w-[1280px] xl:h-[615px] w-auto h-auto rounded-[10px] justify-between items-center xl:flex-row flex-col text-white"
         >
           <img
             src="./assets/images/main-TESTIMONIALS-personalPic.png"
@@ -597,7 +604,7 @@
       <!-- Blogs -->
       <section class="flex flex-col items-center xl:mb-32 mb-16">
         <div
-          class="text-[40px] text-dark-yellow xl:mt-[120px] mt-14 xl:mb-[80px] mb-5 select-none"
+          class="text-[40px] text-yellow-600 dark:text-dark-yellow xl:mt-[120px] mt-14 xl:mb-[80px] mb-5 select-none"
         >
           BLOGS
         </div>
@@ -605,7 +612,7 @@
           class="grid xl:grid-cols-3 lg:grid-cols-2 justify-center items-center gap-x-7 gap-y-11"
         >
           <div
-            class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent text-white bg-gray-900 p-5 border-y-4 border-y-red-500 rounded-2xl"
+            class="flex flex-col items-start sm:w-auto w-fit dark:xl:bg-transparent text-white bg-gray-900 p-5 border-y-4 border-y-red-500 rounded-2xl"
           >
             <img
               src="./assets/images/main-blogs-pic1.png"
@@ -623,7 +630,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent text-white bg-gray-900 p-5 border-y-4 border-yellow-200 rounded-2xl"
+            class="flex flex-col items-start sm:w-auto w-fit dark:xl:bg-transparent text-white bg-gray-900 p-5 border-y-4 border-yellow-200 rounded-2xl"
           >
             <img
               src="./assets/images/main-blogs-pic2.png"
@@ -641,7 +648,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col items-start sm:w-auto w-fit xl:bg-transparent text-white bg-gray-900 p-5 border-y-4 border-sky-500 rounded-2xl"
+            class="flex flex-col items-start sm:w-auto w-fit dark:xl:bg-transparent text-white bg-gray-900 p-5 border-y-4 border-sky-500 rounded-2xl"
           >
             <img
               src="./assets/images/main-blogs-pic3.png"
@@ -662,7 +669,7 @@
       </section>
     </main>
 
-    <footer class="bg-dark-gray select-none">
+    <footer class="bg-dark-gray select-none text-white">
       <!-- main footer -->
       <section
         class="grid xl:grid-cols-3 lg:grid-cols-2 justify-center items-center p-16 pb-8 border-b-4 border-zinc-800 xl:gap-0 gap-10"
