@@ -19,4 +19,17 @@
   .small-project-card {
     @apply lg:w-[407px] sm:w-auto w-full h-[500px] flex flex-col rounded-[20px] 2xl:justify-end justify-center px-[30px] py-[50px] mx-[15px];
   }
+
+  .active-menu {
+    @apply text-white bg-dark-yellow;
+  }
+  [type='radio'] ~ span {
+    @apply px-[25px] py-[15px] rounded-xl;
+  }
+  [type='radio']:checked ~ span {
+    @apply active-menu;
+  }
+  [type='radio']:hover ~ span {
+    @apply border-2 border-dark-yellow;
+  }
 }

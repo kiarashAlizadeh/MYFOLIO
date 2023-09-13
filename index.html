@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/main-min.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/main.css" /> -->
+    <link rel="stylesheet" href="./assets/css/main-min.css">
 
     <!-- FavIcon -->
     <link
@@ -350,7 +350,7 @@
       <!-- Header Brand Section -->
       <div
         class="bg-dark-gray py-5 px-10 relative w-full flex gap-20 lg:snap-none lg:overflow-hidden snap-x overflow-x-auto"
-        id="sc"
+        id="sc" draggable="false"
       >
         <img src="./assets/images/header-adobe.svg" alt="" draggable="false" />
         <img src="./assets/images/header-ibm.svg" alt="" draggable="false" />
@@ -464,20 +464,71 @@
         >
           PORTFOLIO
         </div>
-        <ul
-          class="flex justify-center gap-[70px] bg-dark-gray text-lg items-center rounded-[20px] md:flex-row md:max-w-[1058px] md:h-[100px] flex-col max-w-lg h-auto md:py-10 md:px-12 p-10 select-none text-white"
+        <form
+          class="flex justify-center gap-[70px] bg-dark-gray text-lg items-center rounded-[20px] md:flex-row md:w-fit xl:w-[1100px] md:h-[100px] flex-col w-60 h-auto md:py-10 md:px-12 p-10 select-none text-white"
         >
-          <li
-            class="text-white bg-dark-yellow px-[25px] py-[15px] rounded-[12px]"
-          >
-            <a href="">All</a>
-          </li>
-          <li><a href="">Websites</a></li>
-          <li><a href="">Mobile apps</a></li>
-          <li><a href="">Social media Branding</a></li>
-          <li><a href="">Graphics Design</a></li>
-          <li><a href="">SEO</a></li>
-        </ul>
+          <label>
+            <input
+              type="radio"
+              name="difficulty"
+              value="All"
+              checked
+              onchange="onDifficultyChange(this)"
+              class="hidden"
+            />
+            <span>All</span>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="difficulty"
+              value="Mobile apps"
+              onchange="onDifficultyChange(this)"
+              class="hidden"
+            />
+            <span>Apps</span>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="difficulty"
+              value="Websites"
+              onchange="onDifficultyChange(this)"
+              class="hidden"
+            />
+            <span>Websites</span>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="difficulty"
+              value="Branding"
+              onchange="onDifficultyChange(this)"
+              class="hidden"
+            />
+            <span>Branding</span>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="difficulty"
+              value="Design"
+              onchange="onDifficultyChange(this)"
+              class="hidden"
+            />
+            <span>Design</span>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="difficulty"
+              value="SEO"
+              onchange="onDifficultyChange(this)"
+              class="hidden"
+            />
+            <span>SEO</span>
+          </label>
+        </form>
       </section>
 
       <!-- PROJECTS -->
