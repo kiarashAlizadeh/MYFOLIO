@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  img {
+    @apply select-none;
+  }
+}
+
 @layer components {
   .service-card {
     @apply bg-dark-gray text-white flex flex-col justify-between  sm:h-[480px] rounded-[20px] p-[30px] mx-[29px] m-5  sm:w-[407px] w-fit h-auto text-justify;
   }
 
   .big-project-card {
-    @apply xl:w-[843px] xl:h-[500px] max-w-fit max-h-fit flex flex-col rounded-[20px] px-[30px] py-[50px] xl:mx-[15px] cursor-pointer 2xl:mx-0 mx-auto;
+    @apply lg:w-[843px] sm:w-auto w-full h-[500px] flex flex-col rounded-[20px] 2xl:justify-end justify-center px-[30px] py-[50px] mx-[15px];
   }
   .small-project-card {
-    @apply xl:w-[407px] xl:h-[500px] max-w-fit max-h-fit flex flex-col rounded-[20px] px-[30px] py-[50px] lg:mx-[15px] cursor-pointer mx-auto;
+    @apply lg:w-[407px] sm:w-auto w-full h-[500px] flex flex-col rounded-[20px] 2xl:justify-end justify-center px-[30px] py-[50px] mx-[15px];
   }
 }
